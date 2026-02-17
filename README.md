@@ -1,18 +1,18 @@
 # AI-Based Early Prediction and Prevention of Crowd Stampede
 
-## 🚨 Overview
+## Overview
 This project implements an AI-based system for early detection and prediction of crowd stampede risks using spatio-temporal crowd behavior analysis. The system combines YOLOv8 for person detection and LSTM networks for temporal pattern recognition to provide real-time risk assessment.
 
-## 🎯 Features
-- ✅ **Real-time Person Detection**: YOLOv8-based detection and tracking
-- ✅ **Spatial Analysis**: Crowd density and distribution patterns
-- ✅ **Temporal Analysis**: Motion patterns using optical flow
-- ✅ **Risk Prediction**: LSTM-based stampede risk scoring (0-100)
-- ✅ **Visual Alerts**: Color-coded warnings (Green/Yellow/Red)
-- ✅ **Density Heatmaps**: Visual representation of crowd concentration
-- ✅ **Interactive Dashboard**: Streamlit-based web interface
+##  Features
+- **Real-time Person Detection**: YOLOv8-based detection and tracking
+- **Spatial Analysis**: Crowd density and distribution patterns
+- **Temporal Analysis**: Motion patterns using optical flow
+- **Risk Prediction**: LSTM-based stampede risk scoring (0-100)
+- **Visual Alerts**: Color-coded warnings (Green/Yellow/Red)
+- **Density Heatmaps**: Visual representation of crowd concentration
+- **Interactive Dashboard**: Streamlit-based web interface
 
-## 📋 Requirements
+## Requirements
 
 ### System Requirements
 - Python 3.8 or higher
@@ -25,7 +25,7 @@ See `requirements.txt` for complete list:
 pip install -r requirements.txt
 ```
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone or Download Project
 ```bash
@@ -42,7 +42,7 @@ Ensure the following trained models are present in the project directory:
 - `best.pt` - YOLOv8 person detection model
 - `lstm_risk_model.pt` - LSTM risk prediction model
 
-## 💻 Usage
+##  Usage
 
 ### Running the Application
 ```bash
@@ -71,13 +71,13 @@ The application will open in your default web browser at `http://localhost:8501`
 4. **Monitor Results**
    - **Risk Score**: 0-100 scale indicating stampede risk
    - **Alert Level**: 
-     - 🟢 Green (0-30): Low risk
-     - 🟡 Yellow (30-70): Moderate risk
-     - 🔴 Red (70-100): High risk
+     - Green (0-30): Low risk
+     - Yellow (30-70): Moderate risk
+     - Red (70-100): High risk
    - **People Count**: Number of detected persons
    - **Density Heatmap**: Visual crowd concentration
 
-## 🏗️ Project Structure
+## Project Structure
 ```
 Crowd_stampede_detection/
 ├── app.py                      # Main Streamlit application
@@ -94,7 +94,7 @@ Crowd_stampede_detection/
     └── visualizer.py           # Visualization utilities
 ```
 
-## 🧠 How It Works
+## How It Works
 
 ### Workflow
 1. **Video Input**: Upload video or use camera feed
@@ -110,12 +110,12 @@ Crowd_stampede_detection/
 - **LSTM**: Long Short-Term Memory for temporal prediction
 - **Risk Scoring**: Custom algorithm combining spatial and temporal features
 
-## 📊 Datasets Used
+## Datasets Used
 - [ShanghaiTech Crowd Counting Dataset](https://www.kaggle.com/datasets/tthien/shanghaitech)
 - [UCSD Pedestrian Database](https://www.kaggle.com/datasets/aryashah2k/ucsd-pedestrian-database)
 - [Crowd Counting Dataset](https://www.kaggle.com/datasets/trainingdatapro/crowd-counting-dataset)
 
-## ⚙️ Configuration
+## Configuration
 
 Edit `config.py` to customize:
 - Model paths
@@ -124,7 +124,7 @@ Edit `config.py` to customize:
 - Visualization settings
 - Feature extraction parameters
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -145,7 +145,7 @@ Reduce video resolution or process fewer frames (adjust FRAME_SKIP in config.py)
 - Reduce video resolution
 ```
 
-## 📝 Training Custom Models
+## Training Custom Models
 
 Refer to `stampede-detection.ipynb` for:
 - Data preparation
@@ -153,7 +153,7 @@ Refer to `stampede-detection.ipynb` for:
 - Hyperparameter tuning
 - Evaluation metrics
 
-## 🎓 Credits
+## Credits
 
 **Technology Stack:**
 - Python
@@ -166,18 +166,5 @@ Refer to `stampede-detection.ipynb` for:
 - ShanghaiTech University
 - UCSD Computer Vision Group
 
-## 📄 License
-
-This project is for educational and research purposes.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
-## 📧 Contact
-
-For questions or support, please open an issue in the project repository.
-
----
 
 **Note:** This system is designed for early warning and should be used in conjunction with proper crowd management protocols and human oversight.
